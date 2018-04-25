@@ -5,7 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 
-	public float moveSpeed; 
+	public float moveSpeed;
+	public KeyCode Up;
+	public KeyCode Down;
+	public KeyCode Left;
+	public KeyCode Right;
+
 
 	private Animator anim;
 
@@ -16,28 +21,29 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
 
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
 		playerMoving = false;
 
 
-		if (Input.GetAxisRaw ("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+		if (Input.GetKey(Right) || Input.GetKey(Left))
 		{
 			transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal") * moveSpeed * Time.deltaTime, 0F, 0F));
 			playerMoving = true;
 			lastMove = new Vector2 (Input.GetAxisRaw ("Horizontal"), 0f);
 		}
 
-		if (Input.GetAxisRaw ("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
+		if (Input.GetKey(Up) || Input.GetKey(Down))
 		{
 			transform.Translate (new Vector3 (0F, Input.GetAxisRaw ("Vertical") * moveSpeed * Time.deltaTime, 0F));
 			playerMoving = true;
 			lastMove = new Vector2 (0f, Input.GetAxisRaw ("Vertical"));
 		}
+
 
 		anim.SetFloat ("MoveX", Input.GetAxisRaw ("Horizontal"));
 		anim.SetFloat ("MoveY", Input.GetAxisRaw ("Vertical"));
@@ -49,4 +55,3 @@ public class PlayerController : MonoBehaviour {
 
 	}
 }
- 

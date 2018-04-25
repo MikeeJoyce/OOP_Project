@@ -66,4 +66,13 @@ public class MapDestroyer : MonoBehaviour {
 		return true;
 	}
 
+	//private void OnTriggerEnter2D(Collider2D other)
+	//{
+		//if (other.name == Player) 
+		//{
+			
+		//}
+	//}
+
+
 }
