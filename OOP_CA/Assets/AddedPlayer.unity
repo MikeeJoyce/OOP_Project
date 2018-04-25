@@ -5063,6 +5063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1972630114}
   bombPrefab: {fileID: 1905422614231878, guid: 4bb41bc9844ff4d948519dc7b35fddcc, type: 2}
+  player: {fileID: 1791772819}
 --- !u!4 &1167519819
 Transform:
   m_ObjectHideFlags: 0
@@ -5128,7 +5129,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9.094609
+  orthographic size: 11.711747
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
