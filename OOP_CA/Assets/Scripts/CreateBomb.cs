@@ -7,7 +7,7 @@ public class CreateBomb : MonoBehaviour
 
 	public GameObject bombPrefab;
 	public GameObject player;
-
+	public GameObject player2;
 		
 	
 	// Update is called once per frame
@@ -16,6 +16,15 @@ public class CreateBomb : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Space)) 
 		{
 			Vector3 worldPos = player.transform.position;
+			Vector3Int cell = tilemap.WorldToCell(worldPos);
+			Vector3 cellCenterPros = tilemap.GetCellCenterWorld(cell);
+
+			Instantiate(bombPrefab, cellCenterPros, Quaternion.identity);
+		}
+
+		if (Input.GetKeyDown(KeyCode.RightShift)) 
+		{
+			Vector3 worldPos = player2.transform.position;
 			Vector3Int cell = tilemap.WorldToCell(worldPos);
 			Vector3 cellCenterPros = tilemap.GetCellCenterWorld(cell);
 
