@@ -4984,7 +4984,7 @@ MonoBehaviour:
   wallTile: {fileID: 11400000, guid: 12805f7ab9a88418ab77c56b46489295, type: 2}
   rockTile: {fileID: 11400000, guid: 27b2eb66c5bdc4696aa64df38a4fa414, type: 2}
   destructableTile: {fileID: 11400000, guid: f89bc627eb8344d07b9e0efbbe597e77, type: 2}
-  explosionPrefab: {fileID: 1503202449076684, guid: be18dbdc2f9a44f72a176ef8ec8c763f,
+  explosionPrefab: {fileID: 1664190223387788, guid: 824c2eedf13724ff2816e512cd84504f,
     type: 2}
 --- !u!1 &1167519817
 GameObject:
