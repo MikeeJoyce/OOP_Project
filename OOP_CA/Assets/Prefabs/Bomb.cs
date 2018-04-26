@@ -23,7 +23,7 @@ public class Bomb : MonoBehaviour {
 			FindObjectOfType<MapDestroyer>().Explode(transform.position);
 
 			//check if we can kill player 1
-			if (player2 != null && Vector3.Distance (transform.position, player1.transform.position) 
+			if (player1 != null && Vector3.Distance (transform.position, player1.transform.position) 
 				< (tilesize * 2.5 )) {
 
 				//if the player's x pos is close to ours we kill him
