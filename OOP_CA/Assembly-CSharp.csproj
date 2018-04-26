@@ -53,7 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Collision.cs" />
      <Compile Include="Assets\DestroyPlayer.cs" />
-     <Compile Include="Assets\Scripts\Bomb.cs" />
+     <Compile Include="Assets\Prefabs\Bomb.cs" />
      <Compile Include="Assets\Scripts\CreateBomb.cs" />
      <Compile Include="Assets\Scripts\EnemyScore.cs" />
      <Compile Include="Assets\Scripts\MapDestroyer.cs" />

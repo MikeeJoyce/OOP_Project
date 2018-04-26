@@ -53,6 +53,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: 2
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!212 &212371805947324616
 SpriteRenderer:
   m_ObjectHideFlags: 1
