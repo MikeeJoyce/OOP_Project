@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ExplosiveBoiiiii.unity
+- path: Assets/Scene/ExplosiveBoiiiii.unity
   isLoaded: 1
   isActive: 1
