@@ -10,6 +10,7 @@ public class PlayerController_2 : MonoBehaviour {
     public KeyCode Down;
     public KeyCode Left;
     public KeyCode Right;
+	public int playerlife;
 
     [SerializeField]
     private float movespeed;
@@ -22,7 +23,7 @@ public class PlayerController_2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
+		playerlife = 3;
 		
 	}
 	

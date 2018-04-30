@@ -66,6 +66,6 @@ public class MapDestroyer : MonoBehaviour {
 		return true;
 
 
-		Destroy (gameObject);
+
 	}
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bomb : MonoBehaviour {
 
@@ -8,9 +9,7 @@ public class Bomb : MonoBehaviour {
 	float tilesize = 1;
 	public GameObject player1;
 	public GameObject player2;
-    public int ponepoints;
-    public int ptwopoints;
-    public Text countText;
+	public Text countText;
 
 
 	void Awake()
@@ -33,18 +32,15 @@ public class Bomb : MonoBehaviour {
 				< (tilesize * 2.5 )) { 
 
 				//if the player's x pos is close to ours we kill him
-				if (player1.transform.position.x < (transform.position.x + tilesize / 2) &&
-				   player1.transform.position.x > (transform.position.x - tilesize / 2)) {
-					Destroy (player1);
-                    ptwopoints += ptwopoints;
+				if ((player1.transform.position.x < (transform.position.x + tilesize / 2) &&
+					player1.transform.position.x > (transform.position.x - tilesize / 2)) 
+					||
+					(player1.transform.position.y < (transform.position.y + tilesize / 2) &&
+						player1.transform.position.y > (transform.position.y - tilesize / 2)))
+				{
+					player1.GetComponent<PlayerController_2> ().playerlife--;
 				}
 
-				//if the player's y pos is close to ours we kill him
-				if (player1.transform.position.y < (transform.position.y + tilesize / 2) &&
-					player1.transform.position.y > (transform.position.y - tilesize / 2)) {
-					Destroy (player1);
-                    ptwopoints += ptwopoints;
-                }
 					
 			}
 
@@ -53,30 +49,28 @@ public class Bomb : MonoBehaviour {
 				< (tilesize * 2.5 )) {
 
 				//if the player's x pos is close to ours we kill him
-				if (player2.transform.position.x < (transform.position.x + tilesize / 2) &&
-					player2.transform.position.x > (transform.position.x - tilesize / 2)) {
-					Destroy (player2);
-                    ponepoints += ponepoints;
-                }
+				if ((player2.transform.position.x < (transform.position.x + tilesize / 2) &&
+					player2.transform.position.x > (transform.position.x - tilesize / 2)) 
+					||
+					(player2.transform.position.y < (transform.position.y + tilesize / 2) &&
+						player2.transform.position.y > (transform.position.y - tilesize / 2)))
+				{
+					player2.GetComponent<PlayerController_2> ().playerlife--;
+				}
 
-				//if the player's y pos is close to ours we kill him
-				if (player2.transform.position.y < (transform.position.y + tilesize / 2) &&
-					player2.transform.position.y > (transform.position.y - tilesize / 2)) {
-					Destroy (player2);
-                    ponepoints += ponepoints;
-                }
 			}
 
-			Destroy (gameObject);
+				Destroy (gameObject);
+		}
 
+	
+		if (player1.GetComponent<PlayerController_2> ().playerlife <= 0) 
+		{
+			Destroy (player1);
+		}
+		if (player2.GetComponent<PlayerController_2> ().playerlife <= 0) 
+		{
+			Destroy (player2);
 		}
 	}
-
-    void SetCountText()
-    {
-        countText.text = "Player One Score: " + ponepoints.ToString();
-        countText.text = "Player Two Score: " + ptwopoints.ToString();
-    }
-
-
 }
