@@ -11,8 +11,10 @@ public class PlayGame : MonoBehaviour {
 
     public void QuitGame()
     {
-        Debug.Log("QUIT!");
-        Application.Quit();
+		if (Input.GetMouseButtonDown (1)) 
+		{
+			Application.Quit ();
+		}
     }
 }
 
