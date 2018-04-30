@@ -189,7 +189,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 805694942}
+      - m_Target: {fileID: 805694943}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 805694939}
   - component: {fileID: 805694938}
   - component: {fileID: 805694942}
+  - component: {fileID: 805694943}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -417,6 +418,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffc0d5f02a934545a47b5cfea9cd4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &805694943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 805694937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f53fb4386f14034814fa4d1df01f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1324862640
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +505,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 805694942}
+      - m_Target: {fileID: 805694943}
         m_MethodName: playGame
         m_Mode: 1
         m_Arguments:
@@ -634,7 +646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0000038147, y: 4}
   m_SizeDelta: {x: 0, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714409588
@@ -656,7 +668,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: dc8fabc78dc63be418cff3e4a3d434cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 108c1b392ed89427181a1b55e638c69c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -846,7 +858,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7e459093bca1bbb4ab17a6413452fabe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 63c44653b03374827949fb3b74c306d3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -857,7 +869,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 304.33643
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
