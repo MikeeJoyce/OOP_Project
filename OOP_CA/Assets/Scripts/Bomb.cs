@@ -7,7 +7,7 @@ public class Bomb : MonoBehaviour {
 
 	public float countdown = 2f;
 	float tilesize = 1;
-	public GameObject player1;
+    public GameObject player1;
 	public GameObject player2;
     public int ponepoints;
     public int ptwopoints;
