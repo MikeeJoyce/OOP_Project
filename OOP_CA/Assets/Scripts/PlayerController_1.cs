@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController_2 : MonoBehaviour {
+public class PlayerController_1 : MonoBehaviour {
 
     
 
