@@ -56,7 +56,6 @@
      <Compile Include="Assets\Scripts\EnemyScore.cs" />
      <Compile Include="Assets\Scripts\MapDestroyer.cs" />
      <Compile Include="Assets\Scripts\MyScore.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerController_2.cs" />
      <Compile Include="Assets\Scripts\PlayGame.cs" />
  <Reference Include="UnityEngine.UIAutomation">

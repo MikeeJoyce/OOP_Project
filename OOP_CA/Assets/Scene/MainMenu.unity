@@ -147,8 +147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -61.801, y: -78}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -61.801, y: -150}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263543321
 MonoBehaviour:
@@ -170,8 +170,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
-    m_HighlightedColor: {r: 0.597, g: 0.722, b: 0.634, a: 0.466}
-    m_PressedColor: {r: 0.9632353, g: 0.9844832, b: 0.9844832, a: 1}
+    m_HighlightedColor: {r: 0.79607844, g: 0.12941177, b: 0.12941177, a: 0.47058824}
+    m_PressedColor: {r: 0.2, g: 0.6627451, b: 0.09019608, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.552}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.397, g: 0.44908422, b: 0.291, a: 1}
+  m_Color: {r: 0.9843137, g: 0.9607843, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -291,8 +291,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
-    m_FontStyle: 3
+    m_FontSize: 40
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 49
@@ -463,8 +463,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -61.801, y: 98}
-  m_SizeDelta: {x: 160, y: 27.3}
+  m_AnchoredPosition: {x: -61.801, y: -100}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.4999998}
 --- !u!114 &1324862642
 MonoBehaviour:
@@ -486,8 +486,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.99264705, g: 1, b: 1, a: 0}
-    m_HighlightedColor: {r: 0.6869496, g: 0.75, b: 0.449, a: 0.472}
-    m_PressedColor: {r: 0.6911765, g: 0.6911765, b: 0.591, a: 1}
+    m_HighlightedColor: {r: 0.7960785, g: 0.12941177, b: 0.12941177, a: 0.472}
+    m_PressedColor: {r: 0.1984959, g: 0.66176474, b: 0.088995926, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.403}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -668,7 +668,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 108c1b392ed89427181a1b55e638c69c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68af9f7a087494a58870f4585221ddbd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -740,7 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.434, g: 0.49264705, b: 0.34412846, a: 1}
+  m_Color: {r: 0.9843137, g: 0.9607843, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -749,8 +749,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
-    m_FontStyle: 3
+    m_FontSize: 40
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40

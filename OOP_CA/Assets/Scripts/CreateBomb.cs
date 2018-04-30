@@ -13,7 +13,7 @@ public class CreateBomb : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown(KeyCode.F)) 
+		if (Input.GetKeyDown(KeyCode.Tab)) 
 		{
 			Vector3 worldPos = player.transform.position;
 			Vector3Int cell = tilemap.WorldToCell(worldPos);
