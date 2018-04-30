@@ -9,18 +9,12 @@ public class Bomb : MonoBehaviour {
 	float tilesize = 1;
     public GameObject player1;
 	public GameObject player2;
-    float score1;
-    float score2;
-    public Text pscore1;
-    public Text pscore2;
 
 
 	void Awake()
 	{
 		player1 = GameObject.Find("Player");
 		player2 = GameObject.Find("Player 2");
-        pscore1 = GetComponent<Text>();
-        pscore2 = GetComponent<Text>();
     }
 	
 	// Update is called once per frame
@@ -44,7 +38,6 @@ public class Bomb : MonoBehaviour {
 						player1.transform.position.y > (transform.position.y - tilesize / 2)))
 				{
 					player1.GetComponent<PlayerController_2> ().playerlife--;
-                    score1++;
                 }
 
                     Destroy (gameObject);
@@ -62,7 +55,6 @@ public class Bomb : MonoBehaviour {
 						player2.transform.position.y > (transform.position.y - tilesize / 2)))
 				{
 					player2.GetComponent<PlayerController_2> ().playerlife--;
-                    score2++;
 				}
 
 			}
@@ -80,8 +72,6 @@ public class Bomb : MonoBehaviour {
 			Destroy (player2);
 		}
 
-        pscore1.text = "Player One Score: " + Mathf.Round(score1);
-        pscore2.text = "Player Two Score: " + Mathf.Round(score2);
 
     }
 }
