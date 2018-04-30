@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/ExplosiveBoiiiii.unity
+=======
+- path: Assets/Scene/MainMenu.unity
+>>>>>>> 4e2f1dce4b00b087bb6aa09afa1b0202a2a9caf6
   isLoaded: 1
   isActive: 1

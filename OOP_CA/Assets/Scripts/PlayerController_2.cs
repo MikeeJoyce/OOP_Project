@@ -23,7 +23,7 @@ public class PlayerController_2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		playerlife = 3;
+		playerlife = 4;
 		
 	}
 	
