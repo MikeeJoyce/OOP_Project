@@ -8,6 +8,8 @@ public class Bomb : MonoBehaviour {
 	float tilesize = 1;
 	public GameObject player1;
 	public GameObject player2;
+    public int ponepoints;
+    public int ptwopoints;
 
 	void Awake()
 	{
@@ -30,13 +32,15 @@ public class Bomb : MonoBehaviour {
 				if (player1.transform.position.x < (transform.position.x + tilesize / 2) &&
 				   player1.transform.position.x > (transform.position.x - tilesize / 2)) {
 					Destroy (player1);
+                    ptwopoints += ptwopoints;
 				}
 
 				//if the player's y pos is close to ours we kill him
 				if (player1.transform.position.y < (transform.position.y + tilesize / 2) &&
 					player1.transform.position.y > (transform.position.y - tilesize / 2)) {
 					Destroy (player1);
-				}
+                    ptwopoints += ptwopoints;
+                }
 			}
 
 
@@ -49,13 +53,15 @@ public class Bomb : MonoBehaviour {
 				if (player2.transform.position.x < (transform.position.x + tilesize / 2) &&
 					player2.transform.position.x > (transform.position.x - tilesize / 2)) {
 					Destroy (player2);
-				}
+                    ponepoints += ponepoints;
+                }
 
 				//if the player's y pos is close to ours we kill him
 				if (player2.transform.position.y < (transform.position.y + tilesize / 2) &&
 					player2.transform.position.y > (transform.position.y - tilesize / 2)) {
 					Destroy (player2);
-				}
+                    ponepoints += ponepoints;
+                }
 			}
 
 			Destroy (gameObject);
