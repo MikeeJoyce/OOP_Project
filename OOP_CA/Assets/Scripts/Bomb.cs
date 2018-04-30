@@ -10,6 +10,7 @@ public class Bomb : MonoBehaviour {
 	public GameObject player2;
     public int ponepoints;
     public int ptwopoints;
+    public Text countText;
 
 
 	void Awake()
@@ -76,4 +77,12 @@ public class Bomb : MonoBehaviour {
 
 
 	}
+
+    void SetCountText()
+    {
+        countText.text = "Player One Score: " + ponepoints.ToString();
+        countText.text = "Player Two Score: " + ptwopoints.ToString();
+    }
+
+
 }
