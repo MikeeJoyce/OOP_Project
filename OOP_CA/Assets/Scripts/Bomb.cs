@@ -9,6 +9,7 @@ public class Bomb : MonoBehaviour {
 	public GameObject player1;
 	public GameObject player2;
 
+
 	void Awake()
 	{
 		player1 = GameObject.Find("Player");
@@ -17,14 +18,15 @@ public class Bomb : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		countdown -= Time.deltaTime;
 
 		if (countdown <= 0f) {
 			FindObjectOfType<MapDestroyer>().Explode(transform.position);
 
 			//check if we can kill player 1
-			if (player1 != null && Vector3.Distance (transform.position, player1.transform.position) 
-				< (tilesize * 2.5 )) {
+			if (player1 != null && Vector3.Distance(transform.position, player1.transform.position) 
+				< (tilesize * 2.5 )) { 
 
 				//if the player's x pos is close to ours we kill him
 				if (player1.transform.position.x < (transform.position.x + tilesize / 2) &&
@@ -58,7 +60,11 @@ public class Bomb : MonoBehaviour {
 				}
 			}
 
+
 			Destroy (gameObject);
+
+
+
 		}
 
 
