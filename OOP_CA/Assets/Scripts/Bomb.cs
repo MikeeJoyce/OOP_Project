@@ -21,11 +21,12 @@ public class Bomb : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
+	void Update () 
+	{
 		countdown -= Time.deltaTime;
 
-		if (countdown <= 0f) {
+		if (countdown <= 0f)
+		{
 			FindObjectOfType<MapDestroyer>().Explode(transform.position);
 
 			//check if we can kill player 1
@@ -45,9 +46,8 @@ public class Bomb : MonoBehaviour {
 					Destroy (player1);
                     ptwopoints += ptwopoints;
                 }
+					
 			}
-
-
 
 			//check if we can kill player 2
 			if (player2 != null && Vector3.Distance (transform.position, player2.transform.position) 
@@ -68,15 +68,9 @@ public class Bomb : MonoBehaviour {
                 }
 			}
 
-
 			Destroy (gameObject);
 
-
-
 		}
-
-
-
 	}
 
     void SetCountText()

@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scene/MainMenu.unity
+    guid: bd484e374f6eb45bbb1f7a9a5bec0e1c
+  - enabled: 1
+    path: Assets/ExplosiveBoiiiii.unity
+    guid: 62eb078ed68fd4d7d8e59242c1aa537a

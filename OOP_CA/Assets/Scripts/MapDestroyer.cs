@@ -64,5 +64,8 @@ public class MapDestroyer : MonoBehaviour {
 		Instantiate(explosionPrefab, pos, Quaternion.identity);
 
 		return true;
+
+
+		Destroy (gameObject);
 	}
 }
