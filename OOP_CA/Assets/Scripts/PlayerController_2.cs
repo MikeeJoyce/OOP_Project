@@ -15,6 +15,8 @@ public class PlayerController_2 : MonoBehaviour {
     [SerializeField]
     private float movespeed;
 
+	private Animator animator;
+
     private Vector2 direction;
 
     
@@ -24,6 +26,7 @@ public class PlayerController_2 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		playerlife = 4;
+		animator = GetComponent<Animator>();
 		
 	}
 	
@@ -38,6 +41,15 @@ public class PlayerController_2 : MonoBehaviour {
     public void Move()
     {
         transform.Translate(direction * movespeed * Time.deltaTime);
+
+		if(direction.x != 0 || direction.y != 0)
+		{
+			Animate(direction);
+		}
+		else
+		{
+			animator.SetLayerWeight(1, 0);
+		}
     }
 
     private void GetInput()
@@ -65,6 +77,16 @@ public class PlayerController_2 : MonoBehaviour {
             direction += Vector2.left;
         }
     }
+
+	public void Animate(Vector2 direction)
+	{
+
+		animator.SetLayerWeight(1, 1);
+
+		animator.SetFloat("x", direction.x);
+		animator.SetFloat("y", direction.y);
+
+	}
 }
 
 

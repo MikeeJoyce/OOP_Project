@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Bomb : MonoBehaviour {
 
-	public float countdown = 2f;
+	public float countdown = 1.5f;
 	float tilesize = 1;
     public GameObject player1;
 	public GameObject player2;
